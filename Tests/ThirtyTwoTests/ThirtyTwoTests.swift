@@ -8,5 +8,12 @@ final class ThirtyTwoTests: XCTestCase {
 
         // Defining Test Cases and Test Methods
         // https://developer.apple.com/documentation/xctest/defining_test_cases_and_test_methods
+        
+        let orgStr = "node"
+        let orgData = orgStr.data(using: .utf8)!
+        let encodedString = "NZXWIZI="
+        let encodedData = encodedString.data(using: .utf8)!
+        XCTAssertTrue(ThirtyTwo.thirtyTwoEncode(orgData) == encodedData)
+        XCTAssertTrue(ThirtyTwo.thirtyTwoDecode(encodedData) == orgData)
     }
 }
