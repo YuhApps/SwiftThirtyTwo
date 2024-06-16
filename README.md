@@ -1,4 +1,4 @@
-#Swift Thirty Two
+# Swift Thirty Two
 
 An implementation of RC4648(https://datatracker.ietf.org/doc/html/rfc4648) encoding and decoding for Swift.
 
